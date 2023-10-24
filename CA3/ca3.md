@@ -189,7 +189,7 @@ class Mallard{
     }
 }
 ```
-Here we give the Mallard an instance of `Behaviour` and assign it using a constructor. We also have a method that can call the specific behaviour attached to the `Mallard` upon construction.
+Here we give the Mallard an instance of `Behaviour` and assign it using a constructor. We also have a method that can call the specific behaviour attached to the `Mallard` upon construction. This used the idea of "programming to an interface" or "supertype"
 ```java
 public static void main(String args[]){
 

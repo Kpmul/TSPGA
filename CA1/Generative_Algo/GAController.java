@@ -1,4 +1,4 @@
-package CA1.Generative;
+package Generative_Algo;
 
 interface GAController {
     

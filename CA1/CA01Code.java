@@ -1,4 +1,3 @@
-package CA1;
 // Pet.java
 abstract class Pet {
     String name;

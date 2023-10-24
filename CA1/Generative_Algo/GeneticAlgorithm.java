@@ -1,10 +1,10 @@
-package CA1.Generative;
+package Generative_Algo;
 
 // My idea was to create a Genetic Algorithm that created musical pieces. 
 // I used a 'Melody' class that works in a similar fasion to the normal 'Gene' class 
 // and instead of a 'Population' class I created a 'Composition' class.
-// The compositon class groups multiple melodies with the idea being to eventually mutate melodies in order
-// to return a target piece of music. 
+// The compositon class groups multiple melodies with a possible idea being to eventually mutate 
+// melodies in order to return a target piece of music. 
 
 public class GeneticAlgorithm {
     

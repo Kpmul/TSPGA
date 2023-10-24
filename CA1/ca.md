@@ -22,7 +22,7 @@ class Pet(){
 	}    
 	Pet p1 = new Pet(); 	// Runs 
 ```
-By making this class `abstract` we are setting the Pet class as a kind of blueprint that all subclasses will be made from. No instance of a `Pet` can be made, just instances of subclasses of type `Pet`.
+By making this class `abstract` we are setting the Pet class as a kind of blueprint that all subclasses will be made from. No instance of a `Pet` can be made, just instances of subclasses of type `Pet`. This enforces abstraction and code reusability. 
 
 ## 2. **Data-types for `name`, `gender` and `sound`** 
 ```java
@@ -70,7 +70,7 @@ Pet(String gender){
 ```java
 asbtract String makeSound();
 ```
-`abstract` methods can not have method bodies. `abtract` methods must be inherited and given functionality by a `subclass`.
+`abstract` methods can not have method bodies. `abtract` methods must be inherited and given functionality by a `subclass`. 
 ```java
 public String makeSound(){
     return "Roar"; 
@@ -182,7 +182,18 @@ Bone getBone() {
     return bone;
 }
 ```
-The reason for using a method called `getBone` as opposed to accessing an `instance variable` through an `object` eg. `Dog.bone`, is because giving this access to a client using this `class` can lead to potential problems. An example of this would be if the `bone` variable had to change it's name or type, this could be easily dealt with be changing the code of the `Getter` and not affecting the client code at all. Taking these steps and providing `getters` and `setters` is a form of `encapsulation` and overall provides safer and more organised code.
+The reason for using a method called `getBone` as opposed to accessing an `instance variable` through an `object` eg. `Dog.bone`, is because giving this access to a client using this `class` can lead to potential problems eg.
+```java
+fido.bone = null;
+```
+Another example of this would be if the `bone` variable had to change it's name or type, this could be easily dealt with be changing the code of the `Getter` and not affecting the client code at all.
+```java
+public String getBone(){
+
+    return Bone.printString
+}
+``` 
+Taking these steps and providing `getters` and `setters` is a form of `encapsulation` and overall provides safer and more organised code.
 ```java
 Bone getBone(){	
     System.out.println("Retreiving bone!");	
@@ -191,7 +202,6 @@ Bone getBone(){
 ```
 There is also the additional possibility to add extra code in order to do something when the client calls the `getter`.		
 
-//Bone.java (and equivalent for similar: Fish.java)
 ## 10. **worthy of a class? if so why?**
 ```java
 class Bone {

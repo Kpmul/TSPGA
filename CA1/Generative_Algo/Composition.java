@@ -1,4 +1,4 @@
-package CA1.Generative;
+package Generative_Algo;
 import java.util.Arrays;
 import java.util.Random;
 
