@@ -1,4 +1,3 @@
-package Genetic_Algo;
 import java.util.Random;
 
 class Melody implements GAController{

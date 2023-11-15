@@ -1,4 +1,4 @@
-package Generative_Algo;
+
 
 interface GAController {
     

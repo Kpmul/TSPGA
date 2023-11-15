@@ -1,4 +1,4 @@
-package Genetic_Algo;
+
 import java.util.Arrays;
 import java.util.Random;
 
