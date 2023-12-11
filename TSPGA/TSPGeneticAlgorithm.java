@@ -95,7 +95,7 @@ public class TSPGeneticAlgorithm {
     }
 
     public static void main(String[] args) {
-        // Example distance matrix (replace with your own)
+        // Each array represents a city, and each element in the array represents a distance to another city
         int numCities = 10;
         double[][] distanceMatrix = {
             {0.0, 2.3, 8.7, 10.5, 5.1, 3.2, 9.8, 7.6, 6.4, 1.9},
@@ -133,7 +133,7 @@ public class TSPGeneticAlgorithm {
             double improvementThreshold = 0.01; 
             // If the improvement is less than the threshold, stop the algorithm
             if ((lastBestFitness - bestFitness) / lastBestFitness < improvementThreshold) {
-                System.out.println("Converged! Best Fitness: " + bestFitness);
+                System.out.println("Converged! Best Fitness: " + bestFitness); // Fitness is the total distance of the best route
                 break;
             }
             lastBestFitness = bestFitness;
